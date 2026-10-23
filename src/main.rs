@@ -42,6 +42,7 @@ static PUZZLES: &[Puzzle] = &[
     puzzle!(2015, 18, y2015::d18::one_star, y2015::d18::two_star),
     puzzle!(2015, 19, y2015::d19::one_star, y2015::d19::two_star),
     puzzle!(2015, 20, y2015::d20::one_star, y2015::d20::two_star),
+    puzzle!(2015, 21, y2015::d21::one_star, y2015::d21::two_star),
 ];
 
 fn main() {
