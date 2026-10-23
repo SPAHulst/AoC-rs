@@ -16,8 +16,8 @@ struct Command {
 fn read_coordinates(s: &str) -> (u16, u16) {
     let mut coordinates = s.split(',');
 
-    let x: u16 = coordinates.next().unwrap().parse().unwrap();
-    let y: u16 = coordinates.next().unwrap().parse().unwrap();
+    let x = coordinates.next().unwrap().parse().unwrap();
+    let y = coordinates.next().unwrap().parse().unwrap();
 
     (x, y)
 }
