@@ -25,14 +25,6 @@ impl Add for Item {
     }
 }
 
-fn create_boss() -> Boss {
-    Boss {
-        hp: 104,
-        damage: 8,
-        armor: 1,
-    }
-}
-
 fn loadouts_vs_boss(boss: Boss) -> (u16, u16) {
     let weapons = [
         Item {
@@ -169,7 +161,11 @@ fn loadouts_vs_boss(boss: Boss) -> (u16, u16) {
 }
 
 pub fn one_star() {
-    let boss = create_boss();
+    let boss = Boss {
+        hp: 104,
+        damage: 8,
+        armor: 1,
+    };
 
     let (min_gold, _) = loadouts_vs_boss(boss);
 
@@ -177,7 +173,11 @@ pub fn one_star() {
 }
 
 pub fn two_star() {
-    let boss = create_boss();
+    let boss = Boss {
+        hp: 104,
+        damage: 8,
+        armor: 1,
+    };
 
     let (_, max_gold) = loadouts_vs_boss(boss);
 
